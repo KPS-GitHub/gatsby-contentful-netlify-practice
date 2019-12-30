@@ -6,7 +6,7 @@ const MoneyPage = () => {
   return(
     <Layout>
       <MoneySection />
-    </Layout>    
+    </Layout>
   )
 }
 
