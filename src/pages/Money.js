@@ -5,7 +5,7 @@ import MoneySection from '../components/Sections/Money/Page/MoneyPage';
 const MoneyPage = () => {
   return(
     <Layout>
-      <MoneySection />  
+      <MoneySection />
     </Layout>
   )
 }
