@@ -26,7 +26,7 @@ export default Home;
 
 
 const OuterWrap = styled.div`
-  margin: 20rem 20px 20px 20px;
+  margin: 5rem 20px 20px 20px;
 `
 
 const MainWrap = styled.div`
