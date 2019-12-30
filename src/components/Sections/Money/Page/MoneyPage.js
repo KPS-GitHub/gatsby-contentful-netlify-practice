@@ -16,6 +16,6 @@ export default MoneyPage;
 
 
 const PageWrap = styled.div`
-  margin: 5%;
+  margin: 5% 0;
   width: 100%;
 `
