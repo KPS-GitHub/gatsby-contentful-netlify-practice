@@ -61,6 +61,7 @@ class Budget extends React.Component {
 
 export default Budget;
 
+
 const SectionWrap = styled.div`
   display: flex;
   flex-direction: column;
