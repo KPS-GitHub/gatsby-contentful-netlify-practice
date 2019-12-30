@@ -27,7 +27,7 @@ const MoneyPage = () => {
       <Budget />
       <Savings />
       {/* <Img src={contentfulTest} alt="contentful test image" /> */}
-      <img src={contentfulTest} alt="contentful test" />
+      <StyledImage src={contentfulTest} alt="contentful test" />
     </PageWrap>
   );
 }
@@ -38,4 +38,9 @@ export default MoneyPage;
 const PageWrap = styled.div`
   margin: 5% 0;
   width: 100%;
+`
+
+const StyledImage = styled.img`
+  width: 250px;
+  height: 150px;
 `
