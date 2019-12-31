@@ -41,9 +41,8 @@ module.exports = {
         accessToken: `JeeA7mEcLRNNMGSQN59MdEoxM8m0vhJJhM7xvuOlm64`,
       },
     },
-    {
-      resolve: 'gatsby-image'
-    }
+    'gatsby-image',
+    'gatsby-plugin-react-redux',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

@@ -7,6 +7,12 @@ var plugins = [{
     },{
       plugin: require('/Users/kennansmith/Desktop/Temp_Task_Folder/gatsby-contentful-netlify-practice/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
+    },{
+      plugin: require('/Users/kennansmith/Desktop/Temp_Task_Folder/gatsby-contentful-netlify-practice/node_modules/gatsby-plugin-react-redux/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('/Users/kennansmith/Desktop/Temp_Task_Folder/gatsby-contentful-netlify-practice/gatsby-ssr'),
+      options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
