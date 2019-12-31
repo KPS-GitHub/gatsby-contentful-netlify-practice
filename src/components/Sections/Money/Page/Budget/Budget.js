@@ -11,7 +11,8 @@ class Budget extends React.Component {
   state = {
     monthlyBudget: null,
     totalSpent: null,
-    individualPurchase: null,
+    category: null,
+    purchaseAmount: null,
   }
 
   componentDidMount () {
@@ -21,7 +22,8 @@ class Budget extends React.Component {
         this.setState({ 
           monthlyBudget: response.data.monthlyBudget,
           totalSpent: response.data.totalSpent,
-          individualPurchase: response.data.individualPurchase
+          category: response.data.category,
+          purchaseAmount: response.data.purchaseAmount
         });
       })
       .catch( error => {
@@ -43,6 +45,20 @@ class Budget extends React.Component {
       .catch (error => console.log(error));
   }
 
+  categoryUpdate = (newCategory) => {
+    axios.post('https://mydata-822b0.firebaseio.com/Money/Budget/categories.json', newCategory)
+      .then(response => console.log("response from axios post for categories", response))
+      .then(this.setState({category: newCategory}))
+      .catch(error => console.log(error))
+  }
+
+  categoryAmountUpdate = (newPurchase) => {
+    axios.put('https://mydata-822b0.firebaseio.com/Money/Budget/purchases.json', newPurchase)
+      .then(response => console.log("response from axios post for new purchase", response))
+      .then(this.setState({purchaseAmount: newPurchase}))
+      .catch(error => console.log(error))
+  }
+
   render() {
     return(
       <SectionWrap>
@@ -52,7 +68,7 @@ class Budget extends React.Component {
           <BudgetStats />
         </RowWrap>
         <RowWrap>
-          <BudgetInputs budgetUpdate={this.budgetUpdate} spentUpdate={this.spentUpdate} />
+          <BudgetInputs budgetUpdate={this.budgetUpdate} spentUpdate={this.spentUpdate} categoryUpdate={this.categoryUpdate} categoryAmountUpdate={this.categoryAmountUpdate} />
         </RowWrap>
       </SectionWrap>
     )

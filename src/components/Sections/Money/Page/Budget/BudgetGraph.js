@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const BudgetGraph = (props) => {
-  console.log("props from BudgetGraph", props);
+  // console.log("props from BudgetGraph", props);
 
   const percentSpent = (props.data.totalSpent / props.data.monthlyBudget) * 100;
   return (

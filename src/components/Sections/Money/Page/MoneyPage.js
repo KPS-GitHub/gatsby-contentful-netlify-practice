@@ -20,7 +20,7 @@ const MoneyPage = () => {
     }
     `).allContentfulAsset.edges[0].node.file.url;
 
-  console.log(contentfulTest);
+  // console.log(contentfulTest);
 
   return (
     <PageWrap>
