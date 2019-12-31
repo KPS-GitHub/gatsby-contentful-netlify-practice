@@ -42,7 +42,12 @@ module.exports = {
       },
     },
     'gatsby-image',
-    'gatsby-plugin-react-redux',
+    {
+      resolve: 'gatsby-plugin-react-redux',
+      options: {
+        pathToCreateStoreModule: './src/store/createStore'
+      }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

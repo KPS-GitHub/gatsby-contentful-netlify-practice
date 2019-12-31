@@ -9,7 +9,7 @@ var plugins = [{
       options: {"plugins":[]},
     },{
       plugin: require('/Users/kennansmith/Desktop/Temp_Task_Folder/gatsby-contentful-netlify-practice/node_modules/gatsby-plugin-react-redux/gatsby-ssr'),
-      options: {"plugins":[]},
+      options: {"plugins":[],"pathToCreateStoreModule":"./src/store/createStore"},
     },{
       plugin: require('/Users/kennansmith/Desktop/Temp_Task_Folder/gatsby-contentful-netlify-practice/gatsby-ssr'),
       options: {"plugins":[]},
